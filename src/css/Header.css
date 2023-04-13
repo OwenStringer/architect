@@ -1,0 +1,160 @@
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 20px;
+}
+
+.logo a {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logo a:hover {
+    color: #ed1c24;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ed1c24;
+}
+
+.menu a.active {
+    color: #ed1c24;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        flex: 1;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        font-size: 24px;
+        cursor: pointer;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon.active~.menu {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu a {
+        font-size: 16px;
+    }
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+}
+
+.menu-icon:hover {
+    color: #ed1c24;
+    cursor: pointer;
+}
+
+.menu-icon.active {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+
+.menu-icon.active:hover {
+    color: #ed1c24;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu a.active {
+        color: #ed1c24;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu a:hover {
+        color: #ed1c24;
+    }
+}
